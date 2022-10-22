@@ -1,5 +1,5 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
   
     "name": "Intune Shortcuts",
     "description": "A little tool which will help you to access important websites faster. This tool is for people working with Microsoft Intune.",
@@ -9,7 +9,7 @@
       "48": "icon48.png",
       "128": "icon128.png"
     },
-    "action": {
+    "browser_action": {
       "default_popup": "popup.html"
     },
     "permissions": ["activeTab"]
