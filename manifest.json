@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+  
+    "name": "Intune Shortcuts",
+    "description": "A little tool which helps to get to where you want faster. This tool is for people working with Intune.",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab"]
+  }

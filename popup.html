@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MEM Shortcuts</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans"
+        rel="stylesheet"
+        type="text/css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <style>
+      /* Modal Structure */
+
+      html,
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        margin: 0;
+        min-height: 180px;
+        padding: 0;
+        width: 400px;
+        background-color: white;
+      }
+
+      h1 {
+        font-family: "Menlo", monospace;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+        color: #2f5876;
+      }
+
+      a:link,
+      a:visited {
+        color: #000000;
+        outline: 0;
+        text-decoration: none;
+      }
+
+      img {
+        width: 30px;
+      }
+
+      .modal-header {
+        align-items: center;
+        white-space: nowrap;
+        padding: 5px;
+      }
+
+      .modal-content {
+        padding: 0 22px;
+      }
+
+      .modal-icons {
+        height: 50px;
+        width: 100%;
+      }
+
+
+      .logo-icon {
+        vertical-align: text-bottom;
+        margin-right: 12px;
+      }
+
+      .version {
+        color: #444;
+        font-size: 18px;
+      }
+
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 22px;
+        background-color: #000000;
+      }
+
+      .flex-container2 {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-bottom: 0.2px solid #000000;
+      }
+
+
+      .flex {
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+        width: 120px;
+        flex: 1;
+        margin: auto;
+        white-space: nowrap;
+        display:flex;
+        justify-content: center
+      }
+
+      .flex:hover {
+        opacity: 0.5;
+      }
+
+      .flex .fa {
+        font-size: 40px;
+        color: #000000;
+      }
+      
+      .btn {
+        background-color: #4f5d75; /* Blue background */
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        width: 200px;
+        padding: 12px 10px; /* Some padding */
+        font-size: 16px; /* Set a font size */
+        cursor: pointer; /* Mouse pointer on hover */
+        white-space: nowrap;
+        align-items: center;
+      }
+
+    /* Darker background on mouse-over */
+      .btn:hover {
+        background-color: RoyalBlue;
+      }
+
+      .btn_footer {
+        background-color: #2d3142; /* Blue background */
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        width: 200px;
+        padding: 12px 10px; /* Some padding */
+        font-size: 16px; /* Set a font size */
+        cursor: pointer; /* Mouse pointer on hover */
+        white-space: nowrap;
+        align-items: center;
+      }
+
+    /* Darker background on mouse-over */
+      .btn_footer:hover {
+        background-color: RoyalBlue;
+      }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    </style>
+  </head>
+
+  <body style="background-color: #000000;">
+    <div class="modal-header"; style="text-align: center; background-color: #2d3142; font-size: xx-large; color: white; ">
+      Intune Shortcuts
+    </div>
+
+    <div class="flex-container2">
+
+      
+        <a href="https://endpoint.microsoft.com" target="_blank">
+            <button class="btn"> Admin Center</button>
+        </a>
+        <div class="dropdown">
+          <button class="btn"><i class="fa-solid fa-laptop"></i> Devices
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesWindowsMenu/~/windowsDevices" target="_blank">Windows</a>
+            <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesIosMenu/~/iosDevices" target="_blank">iOS/iPadOS</a>
+            <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMacOsMenu/~/macOsDevices" target="_blank">macOS</a>
+            <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesAndroidMenu/~/overview" target="_blank">Android</a>
+            <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesLinuxMenu/~/devices" target="_blank">Linux</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="flex-container2">
+      <div class="dropdown">
+        <button class="btn"><i class="fa-solid fa-gear"></i> Configuration Profiles
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesWindowsMenu/~/configProfiles" target="_blank">Windows</a>
+          <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesIosMenu/~/configProfiles" target="_blank">iOS/iPadOS</a>
+          <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMacOsMenu/~/configProfiles" target="_blank">macOS</a>
+          <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesAndroidMenu/~/configProfiles" target="_blank">Android</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="btn"><i class="fa-solid fa-square-check"></i> Compliance Policies
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesWindowsMenu/~/compliancePolicies" target="_blank">Windows</a>
+          <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesIosMenu/~/compliancePolicies" target="_blank">iOS/iPadOS</a>
+          <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMacOsMenu/~/compliancePolicies" target="_blank">macOS</a>
+          <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesAndroidMenu/~/compliancePolicies" target="_blank">Android</a>
+          <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesLinuxMenu/~/compliancePolicies" target="_blank">Linux</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-container2">
+
+      <div class="dropdown">
+        <button class="btn"><i class="fa-brands fa-microsoft"></i> Apps
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/AppsWindowsMenu/~/windowsApps" target="_blank">Windows</a>
+          <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/AppsIosMenu/~/iosApps" target="_blank">iOS/iPadOS</a>
+          <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/AppsMacOsMenu/~/macOsApps" target="_blank">macOS</a>
+          <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/AppsAndroidMenu/~/androidApps" target="_blank">Android</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="btn"><i class="fa-solid fa-shield"></i> Endpoint security
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_Workflows/SecurityManagementMenu/~/securityBaselines" target="_blank">Security baselines</a>
+          <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_Workflows/SecurityManagementMenu/~/antivirus" target="_blank">Antivirus</a>
+          <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_Workflows/SecurityManagementMenu/~/diskencryption" target="_blank">Disk encryption</a>
+          <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_Workflows/SecurityManagementMenu/~/asr" target="_blank">Attack surface reduction</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="flex-container2">
+
+      <div class="dropdown">
+        <button class="btn"><i class="fa-brands fa-android"></i> Android
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="http://play.google.com/work" target="_blank">Managed Google Play Store</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="btn"><i class="fa-brands fa-apple"></i> Apple
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="https://business.apple.com/" target="_blank">Apple Business Manager</a>
+          <a href="https://macadmins.software/" target="_blank">Microsoft Mac Downloads</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="flex-container2">
+      <a href="https://endpoint.microsoft.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers" target="_blank">
+        <button class="btn"><i class="fa-solid fa-user"></i> Users</button>
+      </a>
+
+      <a href="https://endpoint.microsoft.com/#view/Microsoft_AAD_IAM/GroupsManagementMenuBlade/~/AllGroups" target="_blank">
+        <button class="btn"><i class="fa-solid fa-users"></i> Groups</button>
+      </a>
+
+    </div>
+
+    <div class="flex-container2">
+      <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_Enrollment/UXAnalyticsMenu/~/proactiveRemediations" target="_blank">
+          <button class="btn"><i class="fa-solid fa-book"></i> Proactive Remediations</button>
+      </a>
+      <a href="https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/TenantAdminMenu/~/tenantStatus" target="_blank">
+          <button class="btn"><i class="fa-solid fa-user-gear"></i> Tenant Administration</button>
+      </a>
+    </div>
+
+    <div class="flex-container2">
+      <a href="https://www.reddit.com/r/Intune/" target="_blank">
+          <button class="btn"><i class="fa-brands fa-reddit"></i> Intune Subreddit</button>
+      </a>
+
+      <a href="https://techcommunity.microsoft.com/t5/microsoft-intune/bd-p/Microsoft-Intune" target="_blank">
+          <button class="btn"><i class="fa-brands fa-windows"></i> Intune Techcommunity</button>
+      </a>
+    </div>
+
+    </div>
+
+    <div class="flex-container2">
+
+      <a href="https://portal.azure.com" target="_blank">
+        <button class="btn_footer"><i class="fa-solid fa-cloud"></i> Azure Portal</button>
+      </a>
+
+      <a href="https://portal.azure.com" target="_blank">
+          <button class="btn_footer"><i class="fa-brands fa-square-github"></i> Github</button>
+      </a>
+    </div>
+
+    </div>
+  </body>
+
+
+</html>
