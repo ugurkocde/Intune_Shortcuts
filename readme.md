@@ -2,7 +2,7 @@
 
 ![icon48](https://user-images.githubusercontent.com/43906965/197341288-58a7a518-cf5a-43c2-980b-7bb1b401a503.png)
 
-A little tool which will help you to access important websites faster. This tool is for people working with Microsoft Intune.
+A browser extension which will help you to access important websites faster. This tool is for people working with Microsoft Intune.
 
 # Screenshots
 
@@ -10,6 +10,15 @@ A little tool which will help you to access important websites faster. This tool
 
 ![Screenshot 2022-10-22 150431](https://user-images.githubusercontent.com/43906965/197341293-9342b92e-3a60-4dcb-b84c-9caa89fbb571.png)
 
+
+
+## Supported Browsers
+
+- Chrome
+- Firefox
+- Edge
+- Opera
+- Brave
 
 ## Supported Websites
 
