@@ -3,7 +3,7 @@
   
     "name": "Intune Shortcuts",
     "description": "A little tool which will help you to access important websites faster. This tool is for people working with Microsoft Intune.",
-    "version": "1.1",
+    "version": "1.2",
     "icons": {
       "16": "icon16.png",
       "48": "icon48.png",
